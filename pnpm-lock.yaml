@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@hookform/resolvers':
+        specifier: ^5.0.1
+        version: 5.0.1(react-hook-form@7.55.0(react@18.2.0))
       '@ignite-ui/react':
         specifier: ^2.2.4
         version: 2.2.4(@types/react-dom@18.0.9)(@types/react@18.0.26)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -43,6 +46,11 @@ importers:
         version: 3.24.3
 
 packages:
+
+  '@hookform/resolvers@5.0.1':
+    resolution: {integrity: sha512-u/+Jp83luQNx9AdyW2fIPGY6Y7NG68eN2ZW8FOJYL+M0i4s49+refdJdOp/A9n9HFQtQs3HIDHQvX3ZET2o7YA==}
+    peerDependencies:
+      react-hook-form: ^7.55.0
 
   '@ignite-ui/react@2.2.4':
     resolution: {integrity: sha512-cv3Z6ELOfd3lt6u2C8MrCU7dVAU6EZHaEoSQLB8NPAiYLPu5K78XwtFptWw+RIsYn0/arVlFKIh/FzpWRUxv7g==}
@@ -273,6 +281,9 @@ packages:
       '@types/react':
         optional: true
 
+  '@standard-schema/utils@0.3.0':
+    resolution: {integrity: sha512-e7Mew686owMaPJVNNLs55PUvgz371nKgwsc4vxE49zsODpJEnxgxRo2y/OKrqueavXgZNMDVj3DdHFlaSAeU8g==}
+
   '@stitches/react@1.2.8':
     resolution: {integrity: sha512-9g9dWI4gsSVe8bNLlb+lMkBYsnIKCZTmvqvDG+Avnn69XfmHZKiaMrx7cgTaddq7aTPPmXiTsbFcUy0xgI4+wA==}
     peerDependencies:
@@ -400,6 +411,11 @@ packages:
     resolution: {integrity: sha512-HhY1oqzWCQWuUqvBFnsyrtZRhyPeR7SUGv+C4+MsisMuVfSPx8HpwWqH8tRahSlt6M3PiFAcoeFhZAqIXTxoSg==}
 
 snapshots:
+
+  '@hookform/resolvers@5.0.1(react-hook-form@7.55.0(react@18.2.0))':
+    dependencies:
+      '@standard-schema/utils': 0.3.0
+      react-hook-form: 7.55.0(react@18.2.0)
 
   '@ignite-ui/react@2.2.4(@types/react-dom@18.0.9)(@types/react@18.0.26)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
@@ -569,6 +585,8 @@ snapshots:
       react: 18.2.0
     optionalDependencies:
       '@types/react': 18.0.26
+
+  '@standard-schema/utils@0.3.0': {}
 
   '@stitches/react@1.2.8(react@18.2.0)':
     dependencies:
