@@ -11,6 +11,7 @@ import { signIn, useSession } from "next-auth/react";
 export default function Register() {
 
     const session = useSession()
+    console.log(session)
     const router = useRouter()
 
     const isSignedIn = session.status === 'authenticated'
