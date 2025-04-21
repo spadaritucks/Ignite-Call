@@ -2,16 +2,16 @@ import { Button, Heading, MultiStep, Text, TextInput } from "@ignite-ui/react";
 import { Container, Header } from "../styles";
 import { ArrowRight, Check } from "phosphor-react";
 import { useRouter } from "next/router";
-import { AuthError, ConnectBox, ConnextItem } from "./styles";
+import { AuthError, ConnectBox, ConnectItem } from "./styles";
 import { signIn, useSession } from "next-auth/react";
 
 
 
 
-export default function Register() {
+export default function ConnectCalendar() {
 
     const session = useSession()
-    console.log(session)
+
     const router = useRouter()
 
     const isSignedIn = session.status === 'authenticated'
@@ -34,12 +34,12 @@ export default function Register() {
             </Header>
 
             <ConnectBox>
-                <ConnextItem>
+                <ConnectItem>
                     <Text>Google Calendar</Text>
                     {isSignedIn ? (
                         <Button size='sm' disabled>Conectado<Check /></Button>
                     ) : (<Button variant='secondary' onClick={handleConnectCalendar}>Conectar<ArrowRight /></Button>)}
-                </ConnextItem>
+                </ConnectItem>
 
                 {hasAuthError && (
                     <AuthError>

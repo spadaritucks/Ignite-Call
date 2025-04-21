@@ -6,7 +6,7 @@ export const ConnectBox = styled(Box, {
     flexDirection : 'column'
 })
 
-export const ConnextItem = styled('div', {
+export const ConnectItem = styled('div', {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
