@@ -1,6 +1,6 @@
 
 interface GetWeekDaysParams {
-    short?: boolean
+    short?: boolean | null
 }
 
 export function getWeekDays({short = false} : GetWeekDaysParams) {
