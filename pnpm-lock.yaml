@@ -17,6 +17,9 @@ importers:
       '@prisma/client':
         specifier: 4.7.1
         version: 4.7.1(prisma@4.7.1)
+      '@tanstack/react-query':
+        specifier: ^5.74.4
+        version: 5.74.4(react@18.2.0)
       '@types/cookies':
         specifier: ^0.9.0
         version: 0.9.0
@@ -335,6 +338,14 @@ packages:
 
   '@swc/helpers@0.4.14':
     resolution: {integrity: sha512-4C7nX/dvpzB7za4Ql9K81xK3HPxCpHMgwTZVyf+9JQ6VUbn9jjZVN7/Nkdz/Ugzs2CSjqnL/UPXroiVBVHUWUw==}
+
+  '@tanstack/query-core@5.74.4':
+    resolution: {integrity: sha512-YuG0A0+3i9b2Gfo9fkmNnkUWh5+5cFhWBN0pJAHkHilTx6A0nv8kepkk4T4GRt4e5ahbtFj2eTtkiPcVU1xO4A==}
+
+  '@tanstack/react-query@5.74.4':
+    resolution: {integrity: sha512-mAbxw60d4ffQ4qmRYfkO1xzRBPUEf/72Dgo3qqea0J66nIKuDTLEqQt0ku++SDFlMGMnB6uKDnEG1xD/TDse4Q==}
+    peerDependencies:
+      react: ^18 || ^19
 
   '@types/body-parser@1.19.5':
     resolution: {integrity: sha512-fB3Zu92ucau0iQ0JMCFQE7b/dv8Ot07NI3KaZIkIUNXq82k4eBAqUaneXfleGY9JWskeS9y+u0nXMyspcuQrCg==}
@@ -862,6 +873,13 @@ snapshots:
   '@swc/helpers@0.4.14':
     dependencies:
       tslib: 2.8.1
+
+  '@tanstack/query-core@5.74.4': {}
+
+  '@tanstack/react-query@5.74.4(react@18.2.0)':
+    dependencies:
+      '@tanstack/query-core': 5.74.4
+      react: 18.2.0
 
   '@types/body-parser@1.19.5':
     dependencies:
