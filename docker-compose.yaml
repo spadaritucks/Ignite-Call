@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:latest
+    environment:
+       MYSQL_DATABASE: ignitecall
+       MYSQL_ROOT_PASSWORD: docker
+    ports:
+        - "3310:3306"
+    volumes:
+      - /var/lib/mysql
